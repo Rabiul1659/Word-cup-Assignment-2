@@ -89,7 +89,7 @@ body{
    font-size: 20px;
 }
 .button3{
-    background-color: #DD0000;
+    
     color: #161616;
      margin-top: 30px;
     height: 63px;
@@ -98,6 +98,15 @@ body{
     border: none;
     font-size: 20px;
 
+}
+.button1:hover{
+    background-color: #DD0000; 
+}
+.button3:hover{
+    background-color: #DD0000;
+}
+.link-area a{
+    text-decoration: none;
 }
 .banners{
   
@@ -197,4 +206,38 @@ hr{
     color: gray;
 }
 /* end footer area */
+/* second page start */
+.live-match{
+    display: flex;
+    margin-left: 110px;
+    
+}
+.sec-banners{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+    .sec-page-img{
+        width: 270px;
+        height: 250px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px 2px gray;
+        text-align: center;
+
+    }
+    .sec-page-img img{
+        margin-top: 10px;
+    }
+
+    .vs{
+        position: relative;
+        top: -25px;
+        margin: 10px;
+    }
+    .sec-page-img .match-title{
+        margin-top: 10px;
+    }
+
+/* second page end */
 
