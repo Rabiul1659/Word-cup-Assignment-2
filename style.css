@@ -1,15 +1,23 @@
+
+/* fonts area */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=The+Nautigal:wght@700&display=swap');
+
+/* fonts area */
 *{
     margin: 0; padding: 0;
 }
 body{
-    width: 920px;
+    font-family: 'Poppins', sans-serif;
+   
     margin: 0 auto;
 }
 /* Top banner-area start */
 .top-banner{
+    width: 85%;
     background-color: #1E1E1E;
     border-radius: 10px;
     display: flex;
+   margin: 50px auto;
     
 }
 .text-area{
@@ -50,11 +58,18 @@ body{
 /* Top banner-area end */
 /* start blog area */
 .blog-area{
-    margin-top: 50px;
+    margin-top: 60px;
+    
+}
+.blogs{
+    display: flex;
+    justify-content: center;
 }
 .link-area{
     background-color: #1E1E1E;
     width: 240px;
+    height: 220px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,5 +99,102 @@ body{
     font-size: 20px;
 
 }
+.banners{
+  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
+    grid-column-gap:30px;
+
+}
+.banner{
+    width: 270px;
+    height: 312px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px lightblue
+   
+    
+}
+.banner img{
+    width: 100%;
+    border-radius: 10px;
+}
+.banner .anchor{
+    width: 100px;
+    border: 1px solid #161616;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.banner .anchor a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 20px;
+}
+.banner .para{
+    font-size: 15px;
+    margin-top: 10px;
+
+   
+}
+.banner .icon{
+    display: flex;
+    align-items: center;
+ 
+   
+   
+ 
+}
+.fa-clock{
+   font-size: 15px;
+  margin-right: 10px;
+}
+.fa-comment-dots{
+    margin: 15px;
+}
+
+
+
 /* end blog area */
+/* start footer area */
+.footer{
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    color: #fff;
+    margin-top: 50px;
+   position: relative;
+   
+}
+hr{
+    position: absolute;
+    width: 1000px;
+    left: 130px;
+    top: 200px;
+    border: 0.5px solid gray;
+}
+.footer .footer-title{
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+.footer-nav{
+    
+    position: absolute;
+    top: 250px;
+    left: 200px;
+}
+.footer-nav > ul{
+    display: flex;
+    
+}
+.footer-nav ul li{
+    list-style-type: none;
+    margin: 20px;
+}
+.footer-nav ul li a{
+    text-decoration: none;
+    color: gray;
+}
+/* end footer area */
 
