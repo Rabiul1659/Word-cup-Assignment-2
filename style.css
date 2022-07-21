@@ -24,7 +24,7 @@ body{
     padding: 50px;
     margin-left: 20px;
     color: #fff;
-    width: 50%;
+    width: 45%;
 }
 .text-area h2{
     font-size: 50px;
@@ -120,7 +120,7 @@ body{
     width: 270px;
     height: 312px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 5px lightblue
+    box-shadow: 2px 2px 2px ghostwhite;
    
     
 }
@@ -161,8 +161,23 @@ body{
 .fa-comment-dots{
     margin: 15px;
 }
+.invisible{
+    text-align: center;
+    display: none;
+}
 
+.btn-none{
+    background-color:#DD0000; 
+    color: #161616;
+    margin-top: 30px;
+   height: 63px;
+   width: 200px; 
+   border-radius: 10px;
+   border: none;
+   font-size: 20px;
+   position: relative;
 
+}
 
 /* end blog area */
 /* start footer area */
@@ -240,4 +255,35 @@ hr{
     }
 
 /* second page end */
+
+/* @media query */
+@media screen and  ( max-width: 992px){
+    .top-banner{
+        width: 100%;
+    }
+    .banners{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap:30px;
+        grid-column-gap: 30px;
+    
+    }
+    .link-area{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+     
+    }
+  
+    .invisible{
+        display: block;
+        margin-left: 416px;
+     
+    }
+    .footer{
+        max-width: 992px;
+
+    }
+    
+}
 
